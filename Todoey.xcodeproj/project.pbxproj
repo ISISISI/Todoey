@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5193778218C27D5009E7979 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5193777218C27D5009E7979 /* Item.swift */; };
 		A5918C342181AF1D007507C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5918C332181AF1D007507C9 /* AppDelegate.swift */; };
 		A5918C362181AF1D007507C9 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5918C352181AF1D007507C9 /* TodoListViewController.swift */; };
 		A5918C392181AF1D007507C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5918C372181AF1D007507C9 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A5193777218C27D5009E7979 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		A5918C302181AF1D007507C9 /* Todoey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todoey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5918C332181AF1D007507C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5918C352181AF1D007507C9 /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +37,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A5193779218C27EA009E7979 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				A5193777218C27D5009E7979 /* Item.swift */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		A519377A218C280E009E7979 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A5918C352181AF1D007507C9 /* TodoListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A519377B218C2825009E7979 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A5918C372181AF1D007507C9 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A519377C218C283C009E7979 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5918C3A2181AF1E007507C9 /* Assets.xcassets */,
+				A5918C3C2181AF1E007507C9 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		A5918C272181AF1D007507C9 = {
 			isa = PBXGroup;
 			children = (
@@ -55,10 +90,10 @@
 			isa = PBXGroup;
 			children = (
 				A5918C332181AF1D007507C9 /* AppDelegate.swift */,
-				A5918C352181AF1D007507C9 /* TodoListViewController.swift */,
-				A5918C372181AF1D007507C9 /* Main.storyboard */,
-				A5918C3A2181AF1E007507C9 /* Assets.xcassets */,
-				A5918C3C2181AF1E007507C9 /* LaunchScreen.storyboard */,
+				A519377A218C280E009E7979 /* Controllers */,
+				A5193779218C27EA009E7979 /* Data Model */,
+				A519377B218C2825009E7979 /* Views */,
+				A519377C218C283C009E7979 /* Supporting Files */,
 				A5918C3F2181AF1E007507C9 /* Info.plist */,
 			);
 			path = Todoey;
@@ -96,6 +131,7 @@
 				TargetAttributes = {
 					A5918C2F2181AF1D007507C9 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -136,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5918C362181AF1D007507C9 /* TodoListViewController.swift in Sources */,
+				A5193778218C27D5009E7979 /* Item.swift in Sources */,
 				A5918C342181AF1D007507C9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,7 +326,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.SIERHIEIEVSERHII.Todoey;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -307,7 +344,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.SIERHIEIEVSERHII.Todoey;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
